@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9784CA9-BBFF-4A75-94EC-6BE1A8B36BA5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SchoolWebSite</RootNamespace>
+    <AssemblyName>SchoolWebSite</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.1\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.0.0\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="carousel2.html" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="css\animations.css" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\initcarousel-1.css" />
+    <Content Include="css\jquery.bxslider.css" />
+    <Content Include="css\layerslider.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\player.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\skin.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\fontello.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\rt-icons.svg" />
+    <Content Include="fonts\socialico-webfont.svg" />
+    <Content Include="gallery.html" />
+    <Content Include="gallery\4769.jpg" />
+    <Content Include="gallery\4776.jpg" />
+    <Content Include="gallery\4835.jpg" />
+    <Content Include="gallery\4901.jpg" />
+    <Content Include="gallery\gallery-thumb\4769-tn.jpg" />
+    <Content Include="gallery\gallery-thumb\4776-tn.jpg" />
+    <Content Include="gallery\gallery-thumb\4835-tn.jpg" />
+    <Content Include="gallery\gallery-thumb\4901-tn.jpg" />
+    <Content Include="icons\day.png" />
+    <Content Include="icons\fac1.jpg" />
+    <Content Include="icons\fac2.jpg" />
+    <Content Include="icons\fac3.jpg" />
+    <Content Include="icons\fac4.jpg" />
+    <Content Include="icons\fac5.jpg" />
+    <Content Include="icons\fac6.jpg" />
+    <Content Include="icons\fb.png" />
+    <Content Include="icons\Google.png" />
+    <Content Include="icons\infra.gif" />
+    <Content Include="icons\li.png" />
+    <Content Include="icons\nurs.png" />
+    <Content Include="icons\pre.png" />
+    <Content Include="icons\tod.png" />
+    <Content Include="icons\tw.png" />
+    <Content Include="icons\why.png" />
+    <Content Include="image\01.jpg" />
+    <Content Include="image\02.jpg" />
+    <Content Include="image\03.jpg" />
+    <Content Include="image\04.jpg" />
+    <Content Include="image\accent.png" />
+    <Content Include="image\arrows-32-32-3.png" />
+    <Content Include="image\arrows-36-80-0.png" />
+    <Content Include="image\BG-FooterTap.jpg" />
+    <Content Include="image\Bg-Login.jpg" />
+    <Content Include="image\bullet.png" />
+    <Content Include="image\comingsoon.png" />
+    <Content Include="image\DSC_4769-tn.jpg" />
+    <Content Include="image\DSC_4769.jpg" />
+    <Content Include="image\DSC_4776-tn.jpg" />
+    <Content Include="image\DSC_4776.jpg" />
+    <Content Include="image\DSC_4835-tn.jpg" />
+    <Content Include="image\DSC_4835.jpg" />
+    <Content Include="image\DSC_4901-tn.jpg" />
+    <Content Include="image\DSC_4901.jpg" />
+    <Content Include="image\fac1.jpg" />
+    <Content Include="image\fac2.jpg" />
+    <Content Include="image\fac3.jpg" />
+    <Content Include="image\fac4.jpg" />
+    <Content Include="image\fac5.jpg" />
+    <Content Include="image\fac6.jpg" />
+    <Content Include="image\fb.png" />
+    <Content Include="image\FormBG.jpg" />
+    <Content Include="image\G-left.jpg" />
+    <Content Include="image\G-lrepeater.jpg" />
+    <Content Include="image\G-Right.jpg" />
+    <Content Include="image\Google.png" />
+    <Content Include="image\heroAccent.png" />
+    <Content Include="image\li.png" />
+    <Content Include="image\lightbox-close.png" />
+    <Content Include="image\lightbox-next.png" />
+    <Content Include="image\lightbox-prev.png" />
+    <Content Include="image\logo.png" />
+    <Content Include="image\Mahi.JPG" />
+    <Content Include="image\orderedList0.png" />
+    <Content Include="image\orderedList1.png" />
+    <Content Include="image\orderedList2.png" />
+    <Content Include="image\orderedList3.png" />
+    <Content Include="image\orderedList4.png" />
+    <Content Include="image\orderedList5.png" />
+    <Content Include="image\orderedList6.png" />
+    <Content Include="image\orderedList7.png" />
+    <Content Include="image\orderedList8.png" />
+    <Content Include="image\orderedList9.png" />
+    <Content Include="image\picCollage.jpg" />
+    <Content Include="image\playvideo-64-64-0.png" />
+    <Content Include="image\SchoolLogo.jpg" />
+    <Content Include="image\skin.png" />
+    <Content Include="image\Smarteezlogo.jpg" />
+    <Content Include="image\SubBG.jpg" />
+    <Content Include="image\tw.png" />
+    <Content Include="image\vision.jpg" />
+    <Content Include="img\AjaxLoader.gif" />
+    <Content Include="img\arrows-gallery.png" />
+    <Content Include="img\arrows-horizontal.png" />
+    <Content Include="img\arrows-slider-big.png" />
+    <Content Include="img\arrows-slider-small.png" />
+    <Content Include="img\arrows-slider.png" />
+    <Content Include="img\bg_block-header.png" />
+    <Content Include="img\bg_li.png" />
+    <Content Include="img\fractionslider\fs.pager.png" />
+    <Content Include="img\fractionslider\fs.prevnext.png" />
+    <Content Include="img\fractionslider\fs.spinner.gif" />
+    <Content Include="img\grabbing.png" />
+    <Content Include="img\icon-desktop.png" />
+    <Content Include="img\icon-phone.png" />
+    <Content Include="img\icon-tablet.png" />
+    <Content Include="img\parallax\slogan.jpg" />
+    <Content Include="img\parallax\tweet.jpg" />
+    <Content Include="img\preloader.gif" />
+    <Content Include="img\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="img\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="img\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="img\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="img\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="img\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="img\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="img\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="img\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="img\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="img\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="img\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="img\prettyPhoto\default\default_thumb.png" />
+    <Content Include="img\prettyPhoto\default\loader.gif" />
+    <Content Include="img\prettyPhoto\default\sprite.png" />
+    <Content Include="img\prettyPhoto\default\sprite_next.png" />
+    <Content Include="img\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="img\prettyPhoto\default\sprite_x.png" />
+    <Content Include="img\prettyPhoto\default\sprite_y.png" />
+    <Content Include="img\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="img\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="img\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="img\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="img\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="img\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="img\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="img\prettyPhoto\facebook\loader.gif" />
+    <Content Include="img\prettyPhoto\facebook\sprite.png" />
+    <Content Include="img\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="img\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="img\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="img\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="img\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="img\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="img\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="img\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="img\prettyPhoto\light_square\loader.gif" />
+    <Content Include="img\prettyPhoto\light_square\sprite.png" />
+    <Content Include="img\quotes.png" />
+    <Content Include="img\search.png" />
+    <Content Include="img\slider_arrows.png" />
+    <Content Include="img\tags_icon.png" />
+    <Content Include="img\timeline\biggerdot.png" />
+    <Content Include="img\timeline\dot.gif" />
+    <Content Include="img\timeline\grad_bottom.png" />
+    <Content Include="img\timeline\grad_left.png" />
+    <Content Include="img\timeline\grad_right.png" />
+    <Content Include="img\timeline\grad_top.png" />
+    <Content Include="img\timeline\next.png" />
+    <Content Include="img\timeline\next_v.png" />
+    <Content Include="img\timeline\prev.png" />
+    <Content Include="img\timeline\prev_v.png" />
+    <Content Include="img\ui.totop.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\amazingcarousel.js" />
+    <Content Include="js\amazingslider.js" />
+    <Content Include="js\bootstrap.min.css" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\greensock.js" />
+    <Content Include="js\hoverIntent.js" />
+    <Content Include="js\initcarousel-1.js" />
+    <Content Include="js\initslider-3.js" />
+    <Content Include="js\jflickrfeed.min.js" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\jquery.actual.min.js" />
+    <Content Include="js\jquery.easing.1.3.js" />
+    <Content Include="js\jquery.easypiechart.min.js" />
+    <Content Include="js\jquery.elastislide.js" />
+    <Content Include="js\jquery.flexslider-min.js" />
+    <Content Include="js\jquery.fractionslider.min.js" />
+    <Content Include="js\jquery.isotope.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.localscroll-min.js" />
+    <Content Include="js\jquery.nicescroll.min.js" />
+    <Content Include="js\jquery.parallax-1.1.3.js" />
+    <Content Include="js\jquery.prettyPhoto.js" />
+    <Content Include="js\jquery.scrollTo-min.js" />
+    <Content Include="js\jquery.sticky.js" />
+    <Content Include="js\jquery.ui.totop.js" />
+    <Content Include="js\jquery_2.js" />
+    <Content Include="js\layerslider.kreaturamedia.jquery.js" />
+    <Content Include="js\layerslider.transitions.js" />
+    <Content Include="js\layerslider\skins\borderlessdark3d\loading.gif" />
+    <Content Include="js\layerslider\skins\borderlessdark3d\nothumb.png" />
+    <Content Include="js\layerslider\skins\borderlessdark3d\shadow.png" />
+    <Content Include="js\layerslider\skins\borderlessdark3d\skin.css" />
+    <Content Include="js\layerslider\skins\borderlessdark3d\skin.png" />
+    <Content Include="js\layerslider\skins\borderlessdark\loading.gif" />
+    <Content Include="js\layerslider\skins\borderlessdark\nothumb.png" />
+    <Content Include="js\layerslider\skins\borderlessdark\shadow.png" />
+    <Content Include="js\layerslider\skins\borderlessdark\skin.css" />
+    <Content Include="js\layerslider\skins\borderlessdark\skin.png" />
+    <Content Include="js\layerslider\skins\borderlesslight3d\loading.gif" />
+    <Content Include="js\layerslider\skins\borderlesslight3d\nothumb.png" />
+    <Content Include="js\layerslider\skins\borderlesslight3d\shadow.png" />
+    <Content Include="js\layerslider\skins\borderlesslight3d\skin.css" />
+    <Content Include="js\layerslider\skins\borderlesslight3d\skin.png" />
+    <Content Include="js\layerslider\skins\borderlesslight\loading.gif" />
+    <Content Include="js\layerslider\skins\borderlesslight\nothumb.png" />
+    <Content Include="js\layerslider\skins\borderlesslight\shadow.png" />
+    <Content Include="js\layerslider\skins\borderlesslight\skin.css" />
+    <Content Include="js\layerslider\skins\borderlesslight\skin.png" />
+    <Content Include="js\layerslider\skins\carousel\loading.gif" />
+    <Content Include="js\layerslider\skins\carousel\nothumb.png" />
+    <Content Include="js\layerslider\skins\carousel\skin.css" />
+    <Content Include="js\layerslider\skins\carousel\skin.png" />
+    <Content Include="js\layerslider\skins\darkskin\loading.gif" />
+    <Content Include="js\layerslider\skins\darkskin\nothumb.png" />
+    <Content Include="js\layerslider\skins\darkskin\skin.css" />
+    <Content Include="js\layerslider\skins\darkskin\skin.png" />
+    <Content Include="js\layerslider\skins\defaultskin\loading.gif" />
+    <Content Include="js\layerslider\skins\defaultskin\nothumb.png" />
+    <Content Include="js\layerslider\skins\defaultskin\skin.css" />
+    <Content Include="js\layerslider\skins\defaultskin\skin.png" />
+    <Content Include="js\layerslider\skins\fullwidthdark\loading.gif" />
+    <Content Include="js\layerslider\skins\fullwidthdark\nothumb.png" />
+    <Content Include="js\layerslider\skins\fullwidthdark\skin.css" />
+    <Content Include="js\layerslider\skins\fullwidthdark\skin.png" />
+    <Content Include="js\layerslider\skins\fullwidth\loading.gif" />
+    <Content Include="js\layerslider\skins\fullwidth\nothumb.png" />
+    <Content Include="js\layerslider\skins\fullwidth\skin.css" />
+    <Content Include="js\layerslider\skins\fullwidth\skin.png" />
+    <Content Include="js\layerslider\skins\glass\loading.gif" />
+    <Content Include="js\layerslider\skins\glass\nothumb.png" />
+    <Content Include="js\layerslider\skins\glass\shadow.png" />
+    <Content Include="js\layerslider\skins\glass\skin.css" />
+    <Content Include="js\layerslider\skins\glass\skin.png" />
+    <Content Include="js\layerslider\skins\lightskin\loading.gif" />
+    <Content Include="js\layerslider\skins\lightskin\nothumb.png" />
+    <Content Include="js\layerslider\skins\lightskin\skin.css" />
+    <Content Include="js\layerslider\skins\lightskin\skin.png" />
+    <Content Include="js\layerslider\skins\minimal\loading.gif" />
+    <Content Include="js\layerslider\skins\minimal\nothumb.png" />
+    <Content Include="js\layerslider\skins\minimal\skin.css" />
+    <Content Include="js\layerslider\skins\minimal\skin.png" />
+    <Content Include="js\layerslider\skins\noskin\loading.gif" />
+    <Content Include="js\layerslider\skins\noskin\nothumb.png" />
+    <Content Include="js\layerslider\skins\noskin\skin.css" />
+    <Content Include="js\layerslider\skins\noskin\skin.png" />
+    <Content Include="js\layerslider\skins\v5\loading.gif" />
+    <Content Include="js\layerslider\skins\v5\nothumb.png" />
+    <Content Include="js\layerslider\skins\v5\skin.css" />
+    <Content Include="js\layerslider\skins\v5\skin.png" />
+    <Content Include="js\MailSend.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\modernizr-2.6.2.min.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\placeholdem.min.js" />
+    <Content Include="js\plugins.js" />
+    <Content Include="js\respond.min.js" />
+    <Content Include="js\superfish.js" />
+    <Content Include="js\vendor\bootstrap.js" />
+    <Content Include="js\vendor\bootstrap.min.js" />
+    <Content Include="js\vendor\hoverIntent.js" />
+    <Content Include="js\vendor\jflickrfeed.min.js" />
+    <Content Include="js\vendor\jquery-1.10.2.min.js" />
+    <Content Include="js\vendor\jquery.actual.min.js" />
+    <Content Include="js\vendor\jquery.bxslider.min.js" />
+    <Content Include="js\vendor\jquery.cookie.js" />
+    <Content Include="js\vendor\jquery.easing.1.3.js" />
+    <Content Include="js\vendor\jquery.easypiechart.min.js" />
+    <Content Include="js\vendor\jquery.elastislide.js" />
+    <Content Include="js\vendor\jquery.fitvids.js" />
+    <Content Include="js\vendor\jquery.flexslider-min.js" />
+    <Content Include="js\vendor\jquery.fractionslider.min.js" />
+    <Content Include="js\vendor\jquery.funnyText.min.js" />
+    <Content Include="js\vendor\jquery.isotope.min.js" />
+    <Content Include="js\vendor\jquery.localscroll-min.js" />
+    <Content Include="js\vendor\jquery.nicescroll.min.js" />
+    <Content Include="js\vendor\jquery.parallax-1.1.3.js" />
+    <Content Include="js\vendor\jquery.prettyPhoto.js" />
+    <Content Include="js\vendor\jquery.scrollTo-min.js" />
+    <Content Include="js\vendor\jquery.sticky.js" />
+    <Content Include="js\vendor\jquery.timelinr-0.9.54.js" />
+    <Content Include="js\vendor\jquery.ui.totop.js" />
+    <Content Include="js\vendor\modernizr-2.6.2.min.js" />
+    <Content Include="js\vendor\owl.carousel.min.js" />
+    <Content Include="js\vendor\placeholdem.min.js" />
+    <Content Include="js\vendor\placeholders.min.js" />
+    <Content Include="js\vendor\respond.min.js" />
+    <Content Include="js\vendor\superfish.js" />
+    <Content Include="login.html" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontello.eot" />
+    <Content Include="fonts\fontello.ttf" />
+    <Content Include="fonts\fontello.woff" />
+    <Content Include="fonts\rt-icons.eot" />
+    <Content Include="fonts\rt-icons.ttf" />
+    <Content Include="fonts\rt-icons.woff" />
+    <Content Include="fonts\socialico-webfont.eot" />
+    <Content Include="fonts\socialico-webfont.ttf" />
+    <Content Include="fonts\socialico-webfont.woff" />
+    <Content Include="img\fractionslider\.DS_Store" />
+    <Content Include="img\fractionslider\Thumbs.db" />
+    <Content Include="img\parallax\Thumbs.db" />
+    <Content Include="img\timeline\Thumbs.db" />
+    <Content Include="js\layerslider\skins\borderlessdark\Thumbs.db" />
+    <EntityDeploy Include="Models\SmarteezModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SmarteezModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\SmarteezModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SmarteezModel.edmx</DependentUpon>
+      <LastGenOutput>SmarteezModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\SmarteezModel.edmx.diagram">
+      <DependentUpon>SmarteezModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\SmarteezModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SmarteezModel.edmx</DependentUpon>
+      <LastGenOutput>SmarteezModel.cs</LastGenOutput>
+    </Content>
+    <None Include="Properties\PublishProfiles\PublishCode.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="sliderengine\amazingslider.js" />
+    <Content Include="sliderengine\arrows-32-32-3.png" />
+    <Content Include="sliderengine\bottomshadow-110-95-1.png" />
+    <Content Include="sliderengine\bullet-16-16-1.png" />
+    <Content Include="sliderengine\carouselarrows-32-32-0.png" />
+    <Content Include="sliderengine\initslider-3.js" />
+    <Content Include="sliderengine\jquery.js" />
+    <Content Include="sliderengine\navarrows-28-28-0.png" />
+    <Content Include="sliderengine\navbuttonbgimage-28-28-0.png" />
+    <Content Include="sliderengine\navplaypause-28-28-0.png" />
+    <Content Include="sliderengine\playvideo-64-64-0.png" />
+    <Content Include="sliderengine\previewarrow-16-8-0.png" />
+    <Content Include="testiengine\amazingcarousel.js" />
+    <Content Include="testiengine\html5boxplayer.swf" />
+    <Content Include="testiengine\initcarousel-1.css" />
+    <Content Include="testiengine\initcarousel-1.js" />
+    <Content Include="testiengine\jquery.js" />
+    <Content Include="testiengine\skin\arrows-36-80-0-.png" />
+    <Content Include="testiengine\skin\arrows-36-80-0.png" />
+    <Content Include="testiengine\skin\hoveroverlay-64-64-5.png" />
+    <Content Include="testiengine\skin\html5boxplayer_fullscreen.png" />
+    <Content Include="testiengine\skin\html5boxplayer_hd.png" />
+    <Content Include="testiengine\skin\html5boxplayer_playpause.png" />
+    <Content Include="testiengine\skin\html5boxplayer_playvideo.png" />
+    <Content Include="testiengine\skin\html5boxplayer_volume.png" />
+    <Content Include="testiengine\skin\lightbox-close.png" />
+    <Content Include="testiengine\skin\lightbox-loading.gif" />
+    <Content Include="testiengine\skin\lightbox-next.png" />
+    <Content Include="testiengine\skin\lightbox-playvideo.png" />
+    <Content Include="testiengine\skin\lightbox-prev.png" />
+    <Content Include="testiengine\skin\playvideo-64-64-0.png" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="testiengine\skin\Thumbs.db" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AdmissionInfoController.cs" />
+    <Compile Include="Controllers\EmpController.cs" />
+    <Compile Include="Controllers\EmployeeAttendanceController.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
+    <Compile Include="Controllers\FeeDepositedController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AdmissionInfo.cs">
+      <DependentUpon>SmarteezModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChildActivity.cs">
+      <DependentUpon>SmarteezModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomerQuery.cs">
+      <DependentUpon>SmarteezModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EmpAttendanceRegister.cs">
+      <DependentUpon>SmarteezModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Employee.cs">
+      <DependentUpon>SmarteezModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FeeDeposit.cs">
+      <DependentUpon>SmarteezModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SchoolFeeCommitment.cs">
+      <DependentUpon>SmarteezModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SchoolNotice.cs">
+      <DependentUpon>SmarteezModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Session.cs">
+      <DependentUpon>SmarteezModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SmarteezModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SmarteezModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SmarteezModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SmarteezModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SmarteezModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SmarteezModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StudentInfo.cs">
+      <DependentUpon>SmarteezModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>SmarteezModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WebSiteUser.cs">
+      <DependentUpon>SmarteezModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58876</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58876/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

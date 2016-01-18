@@ -1,0 +1,733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SmarteezDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AdmissionInfo">
+          <Key>
+            <PropertyRef Name="AdmId" />
+          </Key>
+          <Property Name="AdmId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StdtId" Type="int" />
+          <Property Name="FeeCommitmentId" Type="int" />
+          <Property Name="AdmissionNumber" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="AdmDate" Type="date" Nullable="false" />
+          <Property Name="Section" Type="varchar" MaxLength="50" />
+          <Property Name="AdmType" Type="varchar" MaxLength="50" />
+          <Property Name="IsActive" Type="varchar" MaxLength="1" />
+          <Property Name="TransportRequired" Type="varchar" MaxLength="1" />
+          <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="date" />
+          <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+          <Property Name="UpdatedDate" Type="date" />
+        </EntityType>
+        <EntityType Name="ChildActivity">
+          <Key>
+            <PropertyRef Name="AdmNo" />
+          </Key>
+          <Property Name="AdmNo" Type="int" Nullable="false" />
+          <Property Name="ActivityDate" Type="datetime" Nullable="false" />
+          <Property Name="ActivityText" Type="varchar" MaxLength="1000" />
+          <Property Name="NoticeText" Type="varchar" MaxLength="500" />
+          <Property Name="HomeWorkText" Type="varchar" MaxLength="500" />
+          <Property Name="PictureId" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="CustomerQuery">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustomerName" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="MobileNumber" Type="varchar" MaxLength="10" />
+          <Property Name="Message" Type="varchar" MaxLength="1000" />
+          <Property Name="ReceiveDate" Type="datetime" />
+          <Property Name="QueryResponse" Type="varchar" MaxLength="1000" />
+          <Property Name="QueryResponseDate" Type="datetime" />
+          <Property Name="IsQueryResponded" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="EmpAttendanceRegister">
+          <Key>
+            <PropertyRef Name="AttandanceId" />
+          </Key>
+          <Property Name="AttandanceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="varchar" MaxLength="50" />
+          <Property Name="AttendanceInDate" Type="datetime" />
+          <Property Name="AttendanceOutDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmpId" />
+          </Key>
+          <Property Name="EmpId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmpName" Type="varchar" MaxLength="50" />
+          <Property Name="EmpAddress" Type="varchar" MaxLength="100" />
+          <Property Name="EmpEducation" Type="varchar" MaxLength="50" />
+          <Property Name="LastEmployment" Type="varchar" MaxLength="100" />
+          <Property Name="LastEmploymentReasonForLeaving" Type="varchar" MaxLength="500" />
+          <Property Name="EmpCode" Type="varchar" MaxLength="10" />
+          <Property Name="IsActive" Type="varchar" MaxLength="5" />
+          <Property Name="UserId" Type="varchar" MaxLength="50" />
+          <Property Name="EmpPhotoPath" Type="varbinary(max)" />
+          <Property Name="MobileNo" Type="varchar" MaxLength="10" />
+          <Property Name="AlternateNo" Type="varchar" MaxLength="10" />
+          <Property Name="Designation" Type="varchar" MaxLength="50" />
+          <Property Name="DOB" Type="date" />
+          <Property Name="DOJ" Type="date" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="FeeDeposit">
+          <Key>
+            <PropertyRef Name="FeeDepositId" />
+          </Key>
+          <Property Name="FeeDepositId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StudentId" Type="int" />
+          <Property Name="AmountDeposited" Type="float" Nullable="false" />
+          <Property Name="Mode" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ChequeNumber" Type="varchar" MaxLength="10" />
+          <Property Name="Month" Type="varchar" MaxLength="50" />
+          <Property Name="FeeCategory" Type="varchar" MaxLength="50" />
+          <Property Name="DepositDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="UPdatedBy" Type="varchar" MaxLength="50" />
+          <Property Name="UpdatedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SchoolFeeCommitment">
+          <Key>
+            <PropertyRef Name="FeeId" />
+          </Key>
+          <Property Name="FeeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MonthlyFee" Type="float" Nullable="false" />
+          <Property Name="FormFee" Type="float" Nullable="false" />
+          <Property Name="AnnualFee" Type="float" Nullable="false" />
+          <Property Name="AdmFee" Type="float" Nullable="false" />
+          <Property Name="KitCharge" Type="float" Nullable="false" />
+          <Property Name="DayCareFee" Type="float" Nullable="false" />
+          <Property Name="StartDate" Type="datetime" />
+          <Property Name="EndDate" Type="datetime" />
+          <Property Name="Status" Type="varchar" MaxLength="1" />
+          <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="UPdatedBy" Type="varchar" MaxLength="50" />
+          <Property Name="UpdatedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SchoolNotice">
+          <Key>
+            <PropertyRef Name="NoticeId" />
+          </Key>
+          <Property Name="NoticeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NoticeText" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="NoticeDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Session">
+          <Key>
+            <PropertyRef Name="SessionId" />
+          </Key>
+          <Property Name="SessionId" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserId" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="IsActive" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="LoginDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="StudentInfo">
+          <Key>
+            <PropertyRef Name="StudentId" />
+          </Key>
+          <Property Name="StudentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="MiddleName" Type="varchar" MaxLength="50" />
+          <Property Name="FirstName" Type="varchar" MaxLength="50" />
+          <Property Name="NickName" Type="varchar" MaxLength="50" />
+          <Property Name="DOB" Type="date" />
+          <Property Name="Nationality" Type="varchar" MaxLength="50" />
+          <Property Name="Addrerss" Type="varchar" MaxLength="200" />
+          <Property Name="EmergencyContactNo" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="NameOfPersonToBeContacted" Type="varchar" MaxLength="100" />
+          <Property Name="RelationShip" Type="varchar" MaxLength="50" />
+          <Property Name="PreviousSchoolAttended" Type="varchar" MaxLength="100" />
+          <Property Name="ReasonForLeaving" Type="varchar" MaxLength="500" />
+          <Property Name="FatherName" Type="varchar" MaxLength="100" />
+          <Property Name="FatherQualification" Type="varchar" MaxLength="50" />
+          <Property Name="FatherOccupation" Type="varchar" MaxLength="50" />
+          <Property Name="FatherOrgWorkFor" Type="varchar" MaxLength="100" />
+          <Property Name="FatherDesignation" Type="varchar" MaxLength="50" />
+          <Property Name="FatherPhone" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="FatherEmailId" Type="varchar" MaxLength="50" />
+          <Property Name="MotherName" Type="varchar" MaxLength="100" />
+          <Property Name="MotherQualification" Type="varchar" MaxLength="50" />
+          <Property Name="MotherOccupation" Type="varchar" MaxLength="50" />
+          <Property Name="MotherOrgWorkingFor" Type="varchar" MaxLength="50" />
+          <Property Name="MotherDesignation" Type="varchar" MaxLength="50" />
+          <Property Name="MotherPhone" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="MotherEmailId" Type="varchar" MaxLength="50" />
+          <Property Name="MedicalHistOfChild" Type="varchar" MaxLength="1000" />
+          <Property Name="ChildPhoto" Type="varbinary(max)" />
+          <Property Name="UserLogin" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="date" />
+          <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+          <Property Name="UpdatedDate" Type="date" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Passowrd" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="IsActive" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="Role" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="WebSiteUsers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MachineIP" Type="varchar" MaxLength="50" />
+          <Property Name="ClientBrowser" Type="varchar" MaxLength="50" />
+          <Property Name="VisitDate" Type="datetime" />
+        </EntityType>
+        <Association Name="FK_AdmissionInfo_StudentInfo_StdtId">
+          <End Role="StudentInfo" Type="Self.StudentInfo" Multiplicity="0..1" />
+          <End Role="AdmissionInfo" Type="Self.AdmissionInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StudentInfo">
+              <PropertyRef Name="StudentId" />
+            </Principal>
+            <Dependent Role="AdmissionInfo">
+              <PropertyRef Name="StdtId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdmissionInfo_ToTable">
+          <End Role="SchoolFeeCommitment" Type="Self.SchoolFeeCommitment" Multiplicity="0..1" />
+          <End Role="AdmissionInfo" Type="Self.AdmissionInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SchoolFeeCommitment">
+              <PropertyRef Name="FeeId" />
+            </Principal>
+            <Dependent Role="AdmissionInfo">
+              <PropertyRef Name="FeeCommitmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FeeDeposit_ToTable">
+          <End Role="StudentInfo" Type="Self.StudentInfo" Multiplicity="0..1" />
+          <End Role="FeeDeposit" Type="Self.FeeDeposit" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StudentInfo">
+              <PropertyRef Name="StudentId" />
+            </Principal>
+            <Dependent Role="FeeDeposit">
+              <PropertyRef Name="StudentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SmarteezDatabaseModelStoreContainer">
+          <EntitySet Name="AdmissionInfo" EntityType="Self.AdmissionInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ChildActivity" EntityType="Self.ChildActivity" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CustomerQuery" EntityType="Self.CustomerQuery" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EmpAttendanceRegister" EntityType="Self.EmpAttendanceRegister" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FeeDeposit" EntityType="Self.FeeDeposit" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SchoolFeeCommitment" EntityType="Self.SchoolFeeCommitment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SchoolNotice" EntityType="Self.SchoolNotice" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Session" EntityType="Self.Session" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StudentInfo" EntityType="Self.StudentInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WebSiteUsers" EntityType="Self.WebSiteUsers" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_AdmissionInfo_StudentInfo_StdtId" Association="Self.FK_AdmissionInfo_StudentInfo_StdtId">
+            <End Role="StudentInfo" EntitySet="StudentInfo" />
+            <End Role="AdmissionInfo" EntitySet="AdmissionInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdmissionInfo_ToTable" Association="Self.FK_AdmissionInfo_ToTable">
+            <End Role="SchoolFeeCommitment" EntitySet="SchoolFeeCommitment" />
+            <End Role="AdmissionInfo" EntitySet="AdmissionInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FeeDeposit_ToTable" Association="Self.FK_FeeDeposit_ToTable">
+            <End Role="StudentInfo" EntitySet="StudentInfo" />
+            <End Role="FeeDeposit" EntitySet="FeeDeposit" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SmarteezDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AdmissionInfo">
+          <Key>
+            <PropertyRef Name="AdmId" />
+          </Key>
+          <Property Name="AdmId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StdtId" Type="Int32" />
+          <Property Name="FeeCommitmentId" Type="Int32" />
+          <Property Name="AdmissionNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AdmDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Section" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AdmType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TransportRequired" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+          <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="StudentInfo" Relationship="Self.FK_AdmissionInfo_StudentInfo_StdtId" FromRole="AdmissionInfo" ToRole="StudentInfo" />
+          <NavigationProperty Name="SchoolFeeCommitment" Relationship="Self.FK_AdmissionInfo_ToTable" FromRole="AdmissionInfo" ToRole="SchoolFeeCommitment" />
+        </EntityType>
+        <EntityType Name="ChildActivity">
+          <Key>
+            <PropertyRef Name="AdmNo" />
+          </Key>
+          <Property Name="AdmNo" Type="Int32" Nullable="false" />
+          <Property Name="ActivityDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ActivityText" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="NoticeText" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="HomeWorkText" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="PictureId" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="CustomerQuery">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MobileNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Message" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ReceiveDate" Type="DateTime" Precision="3" />
+          <Property Name="QueryResponse" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="QueryResponseDate" Type="DateTime" Precision="3" />
+          <Property Name="IsQueryResponded" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="EmpAttendanceRegister">
+          <Key>
+            <PropertyRef Name="AttandanceId" />
+          </Key>
+          <Property Name="AttandanceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AttendanceInDate" Type="DateTime" Precision="3" />
+          <Property Name="AttendanceOutDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmpId" />
+          </Key>
+          <Property Name="EmpId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmpName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EmpAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EmpEducation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LastEmployment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="LastEmploymentReasonForLeaving" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="EmpCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="UserId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EmpPhotoPath" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="MobileNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="AlternateNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Designation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DOB" Type="DateTime" Precision="0" />
+          <Property Name="DOJ" Type="DateTime" Precision="0" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="FeeDeposit">
+          <Key>
+            <PropertyRef Name="FeeDepositId" />
+          </Key>
+          <Property Name="FeeDepositId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StudentId" Type="Int32" />
+          <Property Name="AmountDeposited" Type="Double" Nullable="false" />
+          <Property Name="Mode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ChequeNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Month" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FeeCategory" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DepositDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="UPdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="StudentInfo" Relationship="Self.FK_FeeDeposit_ToTable" FromRole="FeeDeposit" ToRole="StudentInfo" />
+        </EntityType>
+        <EntityType Name="SchoolFeeCommitment">
+          <Key>
+            <PropertyRef Name="FeeId" />
+          </Key>
+          <Property Name="FeeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MonthlyFee" Type="Double" Nullable="false" />
+          <Property Name="FormFee" Type="Double" Nullable="false" />
+          <Property Name="AnnualFee" Type="Double" Nullable="false" />
+          <Property Name="AdmFee" Type="Double" Nullable="false" />
+          <Property Name="KitCharge" Type="Double" Nullable="false" />
+          <Property Name="DayCareFee" Type="Double" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Precision="3" />
+          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <Property Name="Status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="UPdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="AdmissionInfoes" Relationship="Self.FK_AdmissionInfo_ToTable" FromRole="SchoolFeeCommitment" ToRole="AdmissionInfo" />
+        </EntityType>
+        <EntityType Name="SchoolNotice">
+          <Key>
+            <PropertyRef Name="NoticeId" />
+          </Key>
+          <Property Name="NoticeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NoticeText" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NoticeDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Session">
+          <Key>
+            <PropertyRef Name="SessionId" />
+          </Key>
+          <Property Name="SessionId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IsActive" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LoginDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="StudentInfo">
+          <Key>
+            <PropertyRef Name="StudentId" />
+          </Key>
+          <Property Name="StudentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LastName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NickName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DOB" Type="DateTime" Precision="0" />
+          <Property Name="Nationality" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Addrerss" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="EmergencyContactNo" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="NameOfPersonToBeContacted" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="RelationShip" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PreviousSchoolAttended" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ReasonForLeaving" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="FatherName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="FatherQualification" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FatherOccupation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FatherOrgWorkFor" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="FatherDesignation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FatherPhone" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="FatherEmailId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MotherName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="MotherQualification" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MotherOccupation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MotherOrgWorkingFor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MotherDesignation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MotherPhone" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="MotherEmailId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MedicalHistOfChild" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ChildPhoto" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="UserLogin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+          <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="AdmissionInfoes" Relationship="Self.FK_AdmissionInfo_StudentInfo_StdtId" FromRole="StudentInfo" ToRole="AdmissionInfo" />
+          <NavigationProperty Name="FeeDeposits" Relationship="Self.FK_FeeDeposit_ToTable" FromRole="StudentInfo" ToRole="FeeDeposit" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Passowrd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IsActive" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Role" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="WebSiteUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MachineIP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ClientBrowser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VisitDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <Association Name="FK_AdmissionInfo_StudentInfo_StdtId">
+          <End Role="StudentInfo" Type="Self.StudentInfo" Multiplicity="0..1" />
+          <End Role="AdmissionInfo" Type="Self.AdmissionInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StudentInfo">
+              <PropertyRef Name="StudentId" />
+            </Principal>
+            <Dependent Role="AdmissionInfo">
+              <PropertyRef Name="StdtId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdmissionInfo_ToTable">
+          <End Role="SchoolFeeCommitment" Type="Self.SchoolFeeCommitment" Multiplicity="0..1" />
+          <End Role="AdmissionInfo" Type="Self.AdmissionInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SchoolFeeCommitment">
+              <PropertyRef Name="FeeId" />
+            </Principal>
+            <Dependent Role="AdmissionInfo">
+              <PropertyRef Name="FeeCommitmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FeeDeposit_ToTable">
+          <End Role="StudentInfo" Type="Self.StudentInfo" Multiplicity="0..1" />
+          <End Role="FeeDeposit" Type="Self.FeeDeposit" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StudentInfo">
+              <PropertyRef Name="StudentId" />
+            </Principal>
+            <Dependent Role="FeeDeposit">
+              <PropertyRef Name="StudentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SmarteezDatabaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AdmissionInfoes" EntityType="Self.AdmissionInfo" />
+          <EntitySet Name="ChildActivities" EntityType="Self.ChildActivity" />
+          <EntitySet Name="CustomerQueries" EntityType="Self.CustomerQuery" />
+          <EntitySet Name="EmpAttendanceRegisters" EntityType="Self.EmpAttendanceRegister" />
+          <EntitySet Name="Employees" EntityType="Self.Employee" />
+          <EntitySet Name="FeeDeposits" EntityType="Self.FeeDeposit" />
+          <EntitySet Name="SchoolFeeCommitments" EntityType="Self.SchoolFeeCommitment" />
+          <EntitySet Name="SchoolNotices" EntityType="Self.SchoolNotice" />
+          <EntitySet Name="Sessions" EntityType="Self.Session" />
+          <EntitySet Name="StudentInfoes" EntityType="Self.StudentInfo" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <EntitySet Name="WebSiteUsers" EntityType="Self.WebSiteUser" />
+          <AssociationSet Name="FK_AdmissionInfo_StudentInfo_StdtId" Association="Self.FK_AdmissionInfo_StudentInfo_StdtId">
+            <End Role="StudentInfo" EntitySet="StudentInfoes" />
+            <End Role="AdmissionInfo" EntitySet="AdmissionInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdmissionInfo_ToTable" Association="Self.FK_AdmissionInfo_ToTable">
+            <End Role="SchoolFeeCommitment" EntitySet="SchoolFeeCommitments" />
+            <End Role="AdmissionInfo" EntitySet="AdmissionInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FeeDeposit_ToTable" Association="Self.FK_FeeDeposit_ToTable">
+            <End Role="StudentInfo" EntitySet="StudentInfoes" />
+            <End Role="FeeDeposit" EntitySet="FeeDeposits" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SmarteezDatabaseModelStoreContainer" CdmEntityContainer="SmarteezDatabaseEntities">
+          <EntitySetMapping Name="AdmissionInfoes">
+            <EntityTypeMapping TypeName="SmarteezDatabaseModel.AdmissionInfo">
+              <MappingFragment StoreEntitySet="AdmissionInfo">
+                <ScalarProperty Name="AdmId" ColumnName="AdmId" />
+                <ScalarProperty Name="StdtId" ColumnName="StdtId" />
+                <ScalarProperty Name="FeeCommitmentId" ColumnName="FeeCommitmentId" />
+                <ScalarProperty Name="AdmissionNumber" ColumnName="AdmissionNumber" />
+                <ScalarProperty Name="AdmDate" ColumnName="AdmDate" />
+                <ScalarProperty Name="Section" ColumnName="Section" />
+                <ScalarProperty Name="AdmType" ColumnName="AdmType" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="TransportRequired" ColumnName="TransportRequired" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ChildActivities">
+            <EntityTypeMapping TypeName="SmarteezDatabaseModel.ChildActivity">
+              <MappingFragment StoreEntitySet="ChildActivity">
+                <ScalarProperty Name="AdmNo" ColumnName="AdmNo" />
+                <ScalarProperty Name="ActivityDate" ColumnName="ActivityDate" />
+                <ScalarProperty Name="ActivityText" ColumnName="ActivityText" />
+                <ScalarProperty Name="NoticeText" ColumnName="NoticeText" />
+                <ScalarProperty Name="HomeWorkText" ColumnName="HomeWorkText" />
+                <ScalarProperty Name="PictureId" ColumnName="PictureId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CustomerQueries">
+            <EntityTypeMapping TypeName="SmarteezDatabaseModel.CustomerQuery">
+              <MappingFragment StoreEntitySet="CustomerQuery">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="ReceiveDate" ColumnName="ReceiveDate" />
+                <ScalarProperty Name="QueryResponse" ColumnName="QueryResponse" />
+                <ScalarProperty Name="QueryResponseDate" ColumnName="QueryResponseDate" />
+                <ScalarProperty Name="IsQueryResponded" ColumnName="IsQueryResponded" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmpAttendanceRegisters">
+            <EntityTypeMapping TypeName="SmarteezDatabaseModel.EmpAttendanceRegister">
+              <MappingFragment StoreEntitySet="EmpAttendanceRegister">
+                <ScalarProperty Name="AttandanceId" ColumnName="AttandanceId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="AttendanceInDate" ColumnName="AttendanceInDate" />
+                <ScalarProperty Name="AttendanceOutDate" ColumnName="AttendanceOutDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="SmarteezDatabaseModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+                <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+                <ScalarProperty Name="EmpAddress" ColumnName="EmpAddress" />
+                <ScalarProperty Name="EmpEducation" ColumnName="EmpEducation" />
+                <ScalarProperty Name="LastEmployment" ColumnName="LastEmployment" />
+                <ScalarProperty Name="LastEmploymentReasonForLeaving" ColumnName="LastEmploymentReasonForLeaving" />
+                <ScalarProperty Name="EmpCode" ColumnName="EmpCode" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="EmpPhotoPath" ColumnName="EmpPhotoPath" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="AlternateNo" ColumnName="AlternateNo" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="DOJ" ColumnName="DOJ" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FeeDeposits">
+            <EntityTypeMapping TypeName="SmarteezDatabaseModel.FeeDeposit">
+              <MappingFragment StoreEntitySet="FeeDeposit">
+                <ScalarProperty Name="FeeDepositId" ColumnName="FeeDepositId" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="AmountDeposited" ColumnName="AmountDeposited" />
+                <ScalarProperty Name="Mode" ColumnName="Mode" />
+                <ScalarProperty Name="ChequeNumber" ColumnName="ChequeNumber" />
+                <ScalarProperty Name="Month" ColumnName="Month" />
+                <ScalarProperty Name="FeeCategory" ColumnName="FeeCategory" />
+                <ScalarProperty Name="DepositDate" ColumnName="DepositDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UPdatedBy" ColumnName="UPdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SchoolFeeCommitments">
+            <EntityTypeMapping TypeName="SmarteezDatabaseModel.SchoolFeeCommitment">
+              <MappingFragment StoreEntitySet="SchoolFeeCommitment">
+                <ScalarProperty Name="FeeId" ColumnName="FeeId" />
+                <ScalarProperty Name="MonthlyFee" ColumnName="MonthlyFee" />
+                <ScalarProperty Name="FormFee" ColumnName="FormFee" />
+                <ScalarProperty Name="AnnualFee" ColumnName="AnnualFee" />
+                <ScalarProperty Name="AdmFee" ColumnName="AdmFee" />
+                <ScalarProperty Name="KitCharge" ColumnName="KitCharge" />
+                <ScalarProperty Name="DayCareFee" ColumnName="DayCareFee" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UPdatedBy" ColumnName="UPdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SchoolNotices">
+            <EntityTypeMapping TypeName="SmarteezDatabaseModel.SchoolNotice">
+              <MappingFragment StoreEntitySet="SchoolNotice">
+                <ScalarProperty Name="NoticeId" ColumnName="NoticeId" />
+                <ScalarProperty Name="NoticeText" ColumnName="NoticeText" />
+                <ScalarProperty Name="NoticeDate" ColumnName="NoticeDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sessions">
+            <EntityTypeMapping TypeName="SmarteezDatabaseModel.Session">
+              <MappingFragment StoreEntitySet="Session">
+                <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="LoginDate" ColumnName="LoginDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StudentInfoes">
+            <EntityTypeMapping TypeName="SmarteezDatabaseModel.StudentInfo">
+              <MappingFragment StoreEntitySet="StudentInfo">
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="NickName" ColumnName="NickName" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+                <ScalarProperty Name="Addrerss" ColumnName="Addrerss" />
+                <ScalarProperty Name="EmergencyContactNo" ColumnName="EmergencyContactNo" />
+                <ScalarProperty Name="NameOfPersonToBeContacted" ColumnName="NameOfPersonToBeContacted" />
+                <ScalarProperty Name="RelationShip" ColumnName="RelationShip" />
+                <ScalarProperty Name="PreviousSchoolAttended" ColumnName="PreviousSchoolAttended" />
+                <ScalarProperty Name="ReasonForLeaving" ColumnName="ReasonForLeaving" />
+                <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+                <ScalarProperty Name="FatherQualification" ColumnName="FatherQualification" />
+                <ScalarProperty Name="FatherOccupation" ColumnName="FatherOccupation" />
+                <ScalarProperty Name="FatherOrgWorkFor" ColumnName="FatherOrgWorkFor" />
+                <ScalarProperty Name="FatherDesignation" ColumnName="FatherDesignation" />
+                <ScalarProperty Name="FatherPhone" ColumnName="FatherPhone" />
+                <ScalarProperty Name="FatherEmailId" ColumnName="FatherEmailId" />
+                <ScalarProperty Name="MotherName" ColumnName="MotherName" />
+                <ScalarProperty Name="MotherQualification" ColumnName="MotherQualification" />
+                <ScalarProperty Name="MotherOccupation" ColumnName="MotherOccupation" />
+                <ScalarProperty Name="MotherOrgWorkingFor" ColumnName="MotherOrgWorkingFor" />
+                <ScalarProperty Name="MotherDesignation" ColumnName="MotherDesignation" />
+                <ScalarProperty Name="MotherPhone" ColumnName="MotherPhone" />
+                <ScalarProperty Name="MotherEmailId" ColumnName="MotherEmailId" />
+                <ScalarProperty Name="MedicalHistOfChild" ColumnName="MedicalHistOfChild" />
+                <ScalarProperty Name="ChildPhoto" ColumnName="ChildPhoto" />
+                <ScalarProperty Name="UserLogin" ColumnName="UserLogin" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="SmarteezDatabaseModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Passowrd" ColumnName="Passowrd" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WebSiteUsers">
+            <EntityTypeMapping TypeName="SmarteezDatabaseModel.WebSiteUser">
+              <MappingFragment StoreEntitySet="WebSiteUsers">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="MachineIP" ColumnName="MachineIP" />
+                <ScalarProperty Name="ClientBrowser" ColumnName="ClientBrowser" />
+                <ScalarProperty Name="VisitDate" ColumnName="VisitDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

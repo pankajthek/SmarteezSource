@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0d4055405a2a478d97039e9f3dcea811" Name="Diagram1">
+        <EntityTypeShape EntityType="SmarteezDatabaseModel.AdmissionInfo" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmarteezDatabaseModel.ChildActivity" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmarteezDatabaseModel.CustomerQuery" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmarteezDatabaseModel.EmpAttendanceRegister" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmarteezDatabaseModel.Employee" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmarteezDatabaseModel.FeeDeposit" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmarteezDatabaseModel.SchoolFeeCommitment" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmarteezDatabaseModel.SchoolNotice" Width="1.5" PointX="7.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmarteezDatabaseModel.Session" Width="1.5" PointX="5.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmarteezDatabaseModel.StudentInfo" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmarteezDatabaseModel.User" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmarteezDatabaseModel.WebSiteUser" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="SmarteezDatabaseModel.FK_AdmissionInfo_StudentInfo_StdtId" ManuallyRouted="false" />
+        <AssociationConnector Association="SmarteezDatabaseModel.FK_AdmissionInfo_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="SmarteezDatabaseModel.FK_FeeDeposit_ToTable" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

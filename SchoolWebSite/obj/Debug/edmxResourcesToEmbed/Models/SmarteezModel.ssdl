@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SmarteezDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AdmissionInfo">
+    <Key>
+      <PropertyRef Name="AdmId" />
+    </Key>
+    <Property Name="AdmId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StdtId" Type="int" />
+    <Property Name="FeeCommitmentId" Type="int" />
+    <Property Name="AdmissionNumber" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="AdmDate" Type="date" Nullable="false" />
+    <Property Name="Section" Type="varchar" MaxLength="50" />
+    <Property Name="AdmType" Type="varchar" MaxLength="50" />
+    <Property Name="IsActive" Type="varchar" MaxLength="1" />
+    <Property Name="TransportRequired" Type="varchar" MaxLength="1" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="ChildActivity">
+    <Key>
+      <PropertyRef Name="AdmNo" />
+    </Key>
+    <Property Name="AdmNo" Type="int" Nullable="false" />
+    <Property Name="ActivityDate" Type="datetime" Nullable="false" />
+    <Property Name="ActivityText" Type="varchar" MaxLength="1000" />
+    <Property Name="NoticeText" Type="varchar" MaxLength="500" />
+    <Property Name="HomeWorkText" Type="varchar" MaxLength="500" />
+    <Property Name="PictureId" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="CustomerQuery">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerName" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="MobileNumber" Type="varchar" MaxLength="10" />
+    <Property Name="Message" Type="varchar" MaxLength="1000" />
+    <Property Name="ReceiveDate" Type="datetime" />
+    <Property Name="QueryResponse" Type="varchar" MaxLength="1000" />
+    <Property Name="QueryResponseDate" Type="datetime" />
+    <Property Name="IsQueryResponded" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="EmpAttendanceRegister">
+    <Key>
+      <PropertyRef Name="AttandanceId" />
+    </Key>
+    <Property Name="AttandanceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="varchar" MaxLength="50" />
+    <Property Name="AttendanceInDate" Type="datetime" />
+    <Property Name="AttendanceOutDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmpId" />
+    </Key>
+    <Property Name="EmpId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmpName" Type="varchar" MaxLength="50" />
+    <Property Name="EmpAddress" Type="varchar" MaxLength="100" />
+    <Property Name="EmpEducation" Type="varchar" MaxLength="50" />
+    <Property Name="LastEmployment" Type="varchar" MaxLength="100" />
+    <Property Name="LastEmploymentReasonForLeaving" Type="varchar" MaxLength="500" />
+    <Property Name="EmpCode" Type="varchar" MaxLength="10" />
+    <Property Name="IsActive" Type="varchar" MaxLength="5" />
+    <Property Name="UserId" Type="varchar" MaxLength="50" />
+    <Property Name="EmpPhotoPath" Type="varbinary(max)" />
+    <Property Name="MobileNo" Type="varchar" MaxLength="10" />
+    <Property Name="AlternateNo" Type="varchar" MaxLength="10" />
+    <Property Name="Designation" Type="varchar" MaxLength="50" />
+    <Property Name="DOB" Type="date" />
+    <Property Name="DOJ" Type="date" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="FeeDeposit">
+    <Key>
+      <PropertyRef Name="FeeDepositId" />
+    </Key>
+    <Property Name="FeeDepositId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentId" Type="int" />
+    <Property Name="AmountDeposited" Type="float" Nullable="false" />
+    <Property Name="Mode" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ChequeNumber" Type="varchar" MaxLength="10" />
+    <Property Name="Month" Type="varchar" MaxLength="50" />
+    <Property Name="FeeCategory" Type="varchar" MaxLength="50" />
+    <Property Name="DepositDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UPdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SchoolFeeCommitment">
+    <Key>
+      <PropertyRef Name="FeeId" />
+    </Key>
+    <Property Name="FeeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MonthlyFee" Type="float" Nullable="false" />
+    <Property Name="FormFee" Type="float" Nullable="false" />
+    <Property Name="AnnualFee" Type="float" Nullable="false" />
+    <Property Name="AdmFee" Type="float" Nullable="false" />
+    <Property Name="KitCharge" Type="float" Nullable="false" />
+    <Property Name="DayCareFee" Type="float" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="Status" Type="varchar" MaxLength="1" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UPdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SchoolNotice">
+    <Key>
+      <PropertyRef Name="NoticeId" />
+    </Key>
+    <Property Name="NoticeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NoticeText" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="NoticeDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Session">
+    <Key>
+      <PropertyRef Name="SessionId" />
+    </Key>
+    <Property Name="SessionId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="LoginDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StudentInfo">
+    <Key>
+      <PropertyRef Name="StudentId" />
+    </Key>
+    <Property Name="StudentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="MiddleName" Type="varchar" MaxLength="50" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="NickName" Type="varchar" MaxLength="50" />
+    <Property Name="DOB" Type="date" />
+    <Property Name="Nationality" Type="varchar" MaxLength="50" />
+    <Property Name="Addrerss" Type="varchar" MaxLength="200" />
+    <Property Name="EmergencyContactNo" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="NameOfPersonToBeContacted" Type="varchar" MaxLength="100" />
+    <Property Name="RelationShip" Type="varchar" MaxLength="50" />
+    <Property Name="PreviousSchoolAttended" Type="varchar" MaxLength="100" />
+    <Property Name="ReasonForLeaving" Type="varchar" MaxLength="500" />
+    <Property Name="FatherName" Type="varchar" MaxLength="100" />
+    <Property Name="FatherQualification" Type="varchar" MaxLength="50" />
+    <Property Name="FatherOccupation" Type="varchar" MaxLength="50" />
+    <Property Name="FatherOrgWorkFor" Type="varchar" MaxLength="100" />
+    <Property Name="FatherDesignation" Type="varchar" MaxLength="50" />
+    <Property Name="FatherPhone" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="FatherEmailId" Type="varchar" MaxLength="50" />
+    <Property Name="MotherName" Type="varchar" MaxLength="100" />
+    <Property Name="MotherQualification" Type="varchar" MaxLength="50" />
+    <Property Name="MotherOccupation" Type="varchar" MaxLength="50" />
+    <Property Name="MotherOrgWorkingFor" Type="varchar" MaxLength="50" />
+    <Property Name="MotherDesignation" Type="varchar" MaxLength="50" />
+    <Property Name="MotherPhone" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="MotherEmailId" Type="varchar" MaxLength="50" />
+    <Property Name="MedicalHistOfChild" Type="varchar" MaxLength="1000" />
+    <Property Name="ChildPhoto" Type="varbinary(max)" />
+    <Property Name="UserLogin" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Passowrd" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="Role" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="WebSiteUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MachineIP" Type="varchar" MaxLength="50" />
+    <Property Name="ClientBrowser" Type="varchar" MaxLength="50" />
+    <Property Name="VisitDate" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_AdmissionInfo_StudentInfo_StdtId">
+    <End Role="StudentInfo" Type="Self.StudentInfo" Multiplicity="0..1" />
+    <End Role="AdmissionInfo" Type="Self.AdmissionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StudentInfo">
+        <PropertyRef Name="StudentId" />
+      </Principal>
+      <Dependent Role="AdmissionInfo">
+        <PropertyRef Name="StdtId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdmissionInfo_ToTable">
+    <End Role="SchoolFeeCommitment" Type="Self.SchoolFeeCommitment" Multiplicity="0..1" />
+    <End Role="AdmissionInfo" Type="Self.AdmissionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolFeeCommitment">
+        <PropertyRef Name="FeeId" />
+      </Principal>
+      <Dependent Role="AdmissionInfo">
+        <PropertyRef Name="FeeCommitmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FeeDeposit_ToTable">
+    <End Role="StudentInfo" Type="Self.StudentInfo" Multiplicity="0..1" />
+    <End Role="FeeDeposit" Type="Self.FeeDeposit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StudentInfo">
+        <PropertyRef Name="StudentId" />
+      </Principal>
+      <Dependent Role="FeeDeposit">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SmarteezDatabaseModelStoreContainer">
+    <EntitySet Name="AdmissionInfo" EntityType="Self.AdmissionInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChildActivity" EntityType="Self.ChildActivity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomerQuery" EntityType="Self.CustomerQuery" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmpAttendanceRegister" EntityType="Self.EmpAttendanceRegister" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FeeDeposit" EntityType="Self.FeeDeposit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SchoolFeeCommitment" EntityType="Self.SchoolFeeCommitment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SchoolNotice" EntityType="Self.SchoolNotice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Session" EntityType="Self.Session" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StudentInfo" EntityType="Self.StudentInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WebSiteUsers" EntityType="Self.WebSiteUsers" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AdmissionInfo_StudentInfo_StdtId" Association="Self.FK_AdmissionInfo_StudentInfo_StdtId">
+      <End Role="StudentInfo" EntitySet="StudentInfo" />
+      <End Role="AdmissionInfo" EntitySet="AdmissionInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdmissionInfo_ToTable" Association="Self.FK_AdmissionInfo_ToTable">
+      <End Role="SchoolFeeCommitment" EntitySet="SchoolFeeCommitment" />
+      <End Role="AdmissionInfo" EntitySet="AdmissionInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FeeDeposit_ToTable" Association="Self.FK_FeeDeposit_ToTable">
+      <End Role="StudentInfo" EntitySet="StudentInfo" />
+      <End Role="FeeDeposit" EntitySet="FeeDeposit" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

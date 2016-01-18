@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SmarteezDatabaseModelStoreContainer" CdmEntityContainer="SmarteezDatabaseEntities">
+    <EntitySetMapping Name="AdmissionInfoes">
+      <EntityTypeMapping TypeName="SmarteezDatabaseModel.AdmissionInfo">
+        <MappingFragment StoreEntitySet="AdmissionInfo">
+          <ScalarProperty Name="AdmId" ColumnName="AdmId" />
+          <ScalarProperty Name="StdtId" ColumnName="StdtId" />
+          <ScalarProperty Name="FeeCommitmentId" ColumnName="FeeCommitmentId" />
+          <ScalarProperty Name="AdmissionNumber" ColumnName="AdmissionNumber" />
+          <ScalarProperty Name="AdmDate" ColumnName="AdmDate" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="AdmType" ColumnName="AdmType" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="TransportRequired" ColumnName="TransportRequired" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChildActivities">
+      <EntityTypeMapping TypeName="SmarteezDatabaseModel.ChildActivity">
+        <MappingFragment StoreEntitySet="ChildActivity">
+          <ScalarProperty Name="AdmNo" ColumnName="AdmNo" />
+          <ScalarProperty Name="ActivityDate" ColumnName="ActivityDate" />
+          <ScalarProperty Name="ActivityText" ColumnName="ActivityText" />
+          <ScalarProperty Name="NoticeText" ColumnName="NoticeText" />
+          <ScalarProperty Name="HomeWorkText" ColumnName="HomeWorkText" />
+          <ScalarProperty Name="PictureId" ColumnName="PictureId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerQueries">
+      <EntityTypeMapping TypeName="SmarteezDatabaseModel.CustomerQuery">
+        <MappingFragment StoreEntitySet="CustomerQuery">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="ReceiveDate" ColumnName="ReceiveDate" />
+          <ScalarProperty Name="QueryResponse" ColumnName="QueryResponse" />
+          <ScalarProperty Name="QueryResponseDate" ColumnName="QueryResponseDate" />
+          <ScalarProperty Name="IsQueryResponded" ColumnName="IsQueryResponded" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmpAttendanceRegisters">
+      <EntityTypeMapping TypeName="SmarteezDatabaseModel.EmpAttendanceRegister">
+        <MappingFragment StoreEntitySet="EmpAttendanceRegister">
+          <ScalarProperty Name="AttandanceId" ColumnName="AttandanceId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="AttendanceInDate" ColumnName="AttendanceInDate" />
+          <ScalarProperty Name="AttendanceOutDate" ColumnName="AttendanceOutDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="SmarteezDatabaseModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="EmpAddress" ColumnName="EmpAddress" />
+          <ScalarProperty Name="EmpEducation" ColumnName="EmpEducation" />
+          <ScalarProperty Name="LastEmployment" ColumnName="LastEmployment" />
+          <ScalarProperty Name="LastEmploymentReasonForLeaving" ColumnName="LastEmploymentReasonForLeaving" />
+          <ScalarProperty Name="EmpCode" ColumnName="EmpCode" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EmpPhotoPath" ColumnName="EmpPhotoPath" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="AlternateNo" ColumnName="AlternateNo" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="DOJ" ColumnName="DOJ" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FeeDeposits">
+      <EntityTypeMapping TypeName="SmarteezDatabaseModel.FeeDeposit">
+        <MappingFragment StoreEntitySet="FeeDeposit">
+          <ScalarProperty Name="FeeDepositId" ColumnName="FeeDepositId" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="AmountDeposited" ColumnName="AmountDeposited" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="ChequeNumber" ColumnName="ChequeNumber" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="FeeCategory" ColumnName="FeeCategory" />
+          <ScalarProperty Name="DepositDate" ColumnName="DepositDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UPdatedBy" ColumnName="UPdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolFeeCommitments">
+      <EntityTypeMapping TypeName="SmarteezDatabaseModel.SchoolFeeCommitment">
+        <MappingFragment StoreEntitySet="SchoolFeeCommitment">
+          <ScalarProperty Name="FeeId" ColumnName="FeeId" />
+          <ScalarProperty Name="MonthlyFee" ColumnName="MonthlyFee" />
+          <ScalarProperty Name="FormFee" ColumnName="FormFee" />
+          <ScalarProperty Name="AnnualFee" ColumnName="AnnualFee" />
+          <ScalarProperty Name="AdmFee" ColumnName="AdmFee" />
+          <ScalarProperty Name="KitCharge" ColumnName="KitCharge" />
+          <ScalarProperty Name="DayCareFee" ColumnName="DayCareFee" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UPdatedBy" ColumnName="UPdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolNotices">
+      <EntityTypeMapping TypeName="SmarteezDatabaseModel.SchoolNotice">
+        <MappingFragment StoreEntitySet="SchoolNotice">
+          <ScalarProperty Name="NoticeId" ColumnName="NoticeId" />
+          <ScalarProperty Name="NoticeText" ColumnName="NoticeText" />
+          <ScalarProperty Name="NoticeDate" ColumnName="NoticeDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sessions">
+      <EntityTypeMapping TypeName="SmarteezDatabaseModel.Session">
+        <MappingFragment StoreEntitySet="Session">
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LoginDate" ColumnName="LoginDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentInfoes">
+      <EntityTypeMapping TypeName="SmarteezDatabaseModel.StudentInfo">
+        <MappingFragment StoreEntitySet="StudentInfo">
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="Addrerss" ColumnName="Addrerss" />
+          <ScalarProperty Name="EmergencyContactNo" ColumnName="EmergencyContactNo" />
+          <ScalarProperty Name="NameOfPersonToBeContacted" ColumnName="NameOfPersonToBeContacted" />
+          <ScalarProperty Name="RelationShip" ColumnName="RelationShip" />
+          <ScalarProperty Name="PreviousSchoolAttended" ColumnName="PreviousSchoolAttended" />
+          <ScalarProperty Name="ReasonForLeaving" ColumnName="ReasonForLeaving" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="FatherQualification" ColumnName="FatherQualification" />
+          <ScalarProperty Name="FatherOccupation" ColumnName="FatherOccupation" />
+          <ScalarProperty Name="FatherOrgWorkFor" ColumnName="FatherOrgWorkFor" />
+          <ScalarProperty Name="FatherDesignation" ColumnName="FatherDesignation" />
+          <ScalarProperty Name="FatherPhone" ColumnName="FatherPhone" />
+          <ScalarProperty Name="FatherEmailId" ColumnName="FatherEmailId" />
+          <ScalarProperty Name="MotherName" ColumnName="MotherName" />
+          <ScalarProperty Name="MotherQualification" ColumnName="MotherQualification" />
+          <ScalarProperty Name="MotherOccupation" ColumnName="MotherOccupation" />
+          <ScalarProperty Name="MotherOrgWorkingFor" ColumnName="MotherOrgWorkingFor" />
+          <ScalarProperty Name="MotherDesignation" ColumnName="MotherDesignation" />
+          <ScalarProperty Name="MotherPhone" ColumnName="MotherPhone" />
+          <ScalarProperty Name="MotherEmailId" ColumnName="MotherEmailId" />
+          <ScalarProperty Name="MedicalHistOfChild" ColumnName="MedicalHistOfChild" />
+          <ScalarProperty Name="ChildPhoto" ColumnName="ChildPhoto" />
+          <ScalarProperty Name="UserLogin" ColumnName="UserLogin" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="SmarteezDatabaseModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Passowrd" ColumnName="Passowrd" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebSiteUsers">
+      <EntityTypeMapping TypeName="SmarteezDatabaseModel.WebSiteUser">
+        <MappingFragment StoreEntitySet="WebSiteUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MachineIP" ColumnName="MachineIP" />
+          <ScalarProperty Name="ClientBrowser" ColumnName="ClientBrowser" />
+          <ScalarProperty Name="VisitDate" ColumnName="VisitDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,1270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\BAck Up\DeskTop-2\Play School\DesktopApp\SchoolManagement\Git SchoolAPI\WebSiteWithService\SchoolWebSite\Published Code</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>01/18/2016 14:41:48</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.bootstrap.dll">
+      <publishTime>01/18/2016 14:41:50</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.jQuery.dll">
+      <publishTime>01/18/2016 14:41:50</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>01/18/2016 14:48:12</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>01/18/2016 14:48:12</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>01/18/2016 14:50:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
+      <publishTime>01/18/2016 14:41:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Web.Optimization.WebForms.dll">
+      <publishTime>01/18/2016 14:41:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.MSAjax.dll">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.WebForms.dll">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>01/18/2016 14:41:48</publishTime>
+    </File>
+    <File Include="bin/SchoolWebSite.dll">
+      <publishTime>01/18/2016 19:54:54</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/18/2016 14:41:53</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/18/2016 16:56:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/18/2016 14:41:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/18/2016 14:41:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/18/2016 16:56:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>01/18/2016 14:41:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/18/2016 16:56:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/18/2016 16:56:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/18/2016 16:56:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/18/2016 16:56:39</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/18/2016 14:41:47</publishTime>
+    </File>
+    <File Include="Bundle.config">
+      <publishTime>01/18/2016 14:41:28</publishTime>
+    </File>
+    <File Include="carousel2.html">
+      <publishTime>01/18/2016 15:06:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>01/18/2016 14:41:47</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>01/18/2016 14:41:47</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>01/18/2016 14:41:28</publishTime>
+    </File>
+    <File Include="css/animations.css">
+      <publishTime>01/18/2016 14:54:20</publishTime>
+    </File>
+    <File Include="css/bootstrap-theme.css">
+      <publishTime>01/18/2016 14:54:20</publishTime>
+    </File>
+    <File Include="css/bootstrap-theme.css.map">
+      <publishTime>01/18/2016 14:54:20</publishTime>
+    </File>
+    <File Include="css/bootstrap-theme.min.css">
+      <publishTime>01/18/2016 14:54:20</publishTime>
+    </File>
+    <File Include="css/bootstrap.css">
+      <publishTime>01/18/2016 14:54:20</publishTime>
+    </File>
+    <File Include="css/bootstrap.css.map">
+      <publishTime>01/18/2016 14:54:20</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>01/18/2016 14:54:20</publishTime>
+    </File>
+    <File Include="css/font-awesome.min.css">
+      <publishTime>01/18/2016 14:54:20</publishTime>
+    </File>
+    <File Include="css/initcarousel-1.css">
+      <publishTime>01/18/2016 14:54:20</publishTime>
+    </File>
+    <File Include="css/jquery.bxslider.css">
+      <publishTime>01/18/2016 14:54:20</publishTime>
+    </File>
+    <File Include="css/layerslider.css">
+      <publishTime>01/18/2016 14:54:20</publishTime>
+    </File>
+    <File Include="css/main.css">
+      <publishTime>01/18/2016 14:54:20</publishTime>
+    </File>
+    <File Include="css/player.css">
+      <publishTime>01/18/2016 14:54:20</publishTime>
+    </File>
+    <File Include="css/reset.css">
+      <publishTime>01/18/2016 14:54:20</publishTime>
+    </File>
+    <File Include="css/skin.css">
+      <publishTime>01/18/2016 14:54:20</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>01/18/2016 14:54:20</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>01/18/2016 14:41:28</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.eot">
+      <publishTime>01/18/2016 14:58:48</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>01/18/2016 14:58:48</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>01/18/2016 14:58:48</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>01/18/2016 14:58:48</publishTime>
+    </File>
+    <File Include="fonts/FontAwesome.otf">
+      <publishTime>01/18/2016 14:58:47</publishTime>
+    </File>
+    <File Include="fonts/fontello.eot">
+      <publishTime>01/18/2016 14:58:48</publishTime>
+    </File>
+    <File Include="fonts/fontello.svg">
+      <publishTime>01/18/2016 14:58:48</publishTime>
+    </File>
+    <File Include="fonts/fontello.ttf">
+      <publishTime>01/18/2016 14:58:48</publishTime>
+    </File>
+    <File Include="fonts/fontello.woff">
+      <publishTime>01/18/2016 14:58:48</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/18/2016 14:58:50</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/18/2016 14:58:52</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/18/2016 14:58:52</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/18/2016 14:58:52</publishTime>
+    </File>
+    <File Include="fonts/rt-icons.eot">
+      <publishTime>01/18/2016 14:58:52</publishTime>
+    </File>
+    <File Include="fonts/rt-icons.svg">
+      <publishTime>01/18/2016 14:58:52</publishTime>
+    </File>
+    <File Include="fonts/rt-icons.ttf">
+      <publishTime>01/18/2016 14:58:52</publishTime>
+    </File>
+    <File Include="fonts/rt-icons.woff">
+      <publishTime>01/18/2016 14:58:52</publishTime>
+    </File>
+    <File Include="fonts/socialico-webfont.eot">
+      <publishTime>01/18/2016 14:58:52</publishTime>
+    </File>
+    <File Include="fonts/socialico-webfont.svg">
+      <publishTime>01/18/2016 14:58:52</publishTime>
+    </File>
+    <File Include="fonts/socialico-webfont.ttf">
+      <publishTime>01/18/2016 14:58:53</publishTime>
+    </File>
+    <File Include="fonts/socialico-webfont.woff">
+      <publishTime>01/18/2016 14:58:53</publishTime>
+    </File>
+    <File Include="gallery.html">
+      <publishTime>01/18/2016 15:06:32</publishTime>
+    </File>
+    <File Include="gallery/4769.jpg">
+      <publishTime>01/18/2016 14:59:52</publishTime>
+    </File>
+    <File Include="gallery/4776.jpg">
+      <publishTime>01/18/2016 14:59:52</publishTime>
+    </File>
+    <File Include="gallery/4835.jpg">
+      <publishTime>01/18/2016 14:59:52</publishTime>
+    </File>
+    <File Include="gallery/4901.jpg">
+      <publishTime>01/18/2016 14:59:52</publishTime>
+    </File>
+    <File Include="gallery/gallery-thumb/4769-tn.jpg">
+      <publishTime>01/18/2016 14:59:52</publishTime>
+    </File>
+    <File Include="gallery/gallery-thumb/4776-tn.jpg">
+      <publishTime>01/18/2016 14:59:52</publishTime>
+    </File>
+    <File Include="gallery/gallery-thumb/4835-tn.jpg">
+      <publishTime>01/18/2016 14:59:52</publishTime>
+    </File>
+    <File Include="gallery/gallery-thumb/4901-tn.jpg">
+      <publishTime>01/18/2016 14:59:52</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/18/2016 14:41:28</publishTime>
+    </File>
+    <File Include="icons/day.png">
+      <publishTime>01/18/2016 15:00:31</publishTime>
+    </File>
+    <File Include="icons/fac1.jpg">
+      <publishTime>01/18/2016 15:00:31</publishTime>
+    </File>
+    <File Include="icons/fac2.jpg">
+      <publishTime>01/18/2016 15:00:31</publishTime>
+    </File>
+    <File Include="icons/fac3.jpg">
+      <publishTime>01/18/2016 15:00:31</publishTime>
+    </File>
+    <File Include="icons/fac4.jpg">
+      <publishTime>01/18/2016 15:00:31</publishTime>
+    </File>
+    <File Include="icons/fac5.jpg">
+      <publishTime>01/18/2016 15:00:31</publishTime>
+    </File>
+    <File Include="icons/fac6.jpg">
+      <publishTime>01/18/2016 15:00:31</publishTime>
+    </File>
+    <File Include="icons/fb.png">
+      <publishTime>01/18/2016 15:00:31</publishTime>
+    </File>
+    <File Include="icons/Google.png">
+      <publishTime>01/18/2016 15:00:31</publishTime>
+    </File>
+    <File Include="icons/infra.gif">
+      <publishTime>01/18/2016 15:00:31</publishTime>
+    </File>
+    <File Include="icons/li.png">
+      <publishTime>01/18/2016 15:00:31</publishTime>
+    </File>
+    <File Include="icons/nurs.png">
+      <publishTime>01/18/2016 15:00:31</publishTime>
+    </File>
+    <File Include="icons/pre.png">
+      <publishTime>01/18/2016 15:00:31</publishTime>
+    </File>
+    <File Include="icons/tod.png">
+      <publishTime>01/18/2016 15:00:31</publishTime>
+    </File>
+    <File Include="icons/tw.png">
+      <publishTime>01/18/2016 15:00:31</publishTime>
+    </File>
+    <File Include="icons/why.png">
+      <publishTime>01/18/2016 15:00:31</publishTime>
+    </File>
+    <File Include="image/01.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/02.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/03.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/04.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/accent.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/arrows-32-32-3.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/arrows-36-80-0.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/BG-FooterTap.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/Bg-Login.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/bullet.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/comingsoon.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/DSC_4769-tn.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/DSC_4769.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/DSC_4776-tn.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/DSC_4776.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/DSC_4835-tn.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/DSC_4835.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/DSC_4901-tn.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/DSC_4901.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/fac1.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/fac2.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/fac3.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/fac4.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/fac5.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/fac6.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/fb.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/FormBG.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/G-left.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/G-lrepeater.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/G-Right.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/Google.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/heroAccent.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/li.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/lightbox-close.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/lightbox-next.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/lightbox-prev.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/logo.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/Mahi.JPG">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/orderedList0.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/orderedList1.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/orderedList2.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/orderedList3.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/orderedList4.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/orderedList5.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/orderedList6.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/orderedList7.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/orderedList8.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/orderedList9.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/picCollage.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/playvideo-64-64-0.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/SchoolLogo.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/skin.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/Smarteezlogo.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/SubBG.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/tw.png">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="image/vision.jpg">
+      <publishTime>01/18/2016 15:01:10</publishTime>
+    </File>
+    <File Include="img/AjaxLoader.gif">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/arrows-gallery.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/arrows-horizontal.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/arrows-slider-big.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/arrows-slider-small.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/arrows-slider.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/bg_block-header.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/bg_li.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/fractionslider/.DS_Store">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/fractionslider/fs.pager.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/fractionslider/fs.prevnext.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/fractionslider/fs.spinner.gif">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/fractionslider/Thumbs.db">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/grabbing.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/icon-desktop.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/icon-phone.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/icon-tablet.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/parallax/slogan.jpg">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/parallax/Thumbs.db">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/parallax/tweet.jpg">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/preloader.gif">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/dark_rounded/btnNext.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/dark_rounded/btnPrevious.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/dark_rounded/contentPattern.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/dark_rounded/default_thumbnail.gif">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/dark_rounded/loader.gif">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/dark_rounded/sprite.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/dark_square/btnNext.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/dark_square/btnPrevious.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/dark_square/contentPattern.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/dark_square/default_thumbnail.gif">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/dark_square/loader.gif">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/dark_square/sprite.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/default/default_thumb.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/default/loader.gif">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/default/sprite.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/default/sprite_next.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/default/sprite_prev.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/default/sprite_x.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/default/sprite_y.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/facebook/btnNext.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/facebook/btnPrevious.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/facebook/contentPatternBottom.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/facebook/contentPatternLeft.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/facebook/contentPatternRight.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/facebook/contentPatternTop.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/facebook/default_thumbnail.gif">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/facebook/loader.gif">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/facebook/sprite.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/light_rounded/btnNext.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/light_rounded/btnPrevious.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/light_rounded/default_thumbnail.gif">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/light_rounded/loader.gif">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/light_rounded/sprite.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/light_square/btnNext.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/light_square/btnPrevious.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/light_square/default_thumbnail.gif">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/light_square/loader.gif">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/prettyPhoto/light_square/sprite.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/quotes.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/search.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/slider_arrows.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/tags_icon.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/timeline/biggerdot.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/timeline/dot.gif">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/timeline/grad_bottom.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/timeline/grad_left.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/timeline/grad_right.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/timeline/grad_top.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/timeline/next.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/timeline/next_v.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/timeline/prev.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/timeline/prev_v.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/timeline/Thumbs.db">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="img/ui.totop.png">
+      <publishTime>01/18/2016 15:01:55</publishTime>
+    </File>
+    <File Include="Index.aspx">
+      <publishTime>01/18/2016 15:08:31</publishTime>
+    </File>
+    <File Include="js/amazingcarousel.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/amazingslider.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/bootstrap.min.css">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/bootstrap.min.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/greensock.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/hoverIntent.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/initcarousel-1.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/initslider-3.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jflickrfeed.min.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery-1.10.2.min.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery.actual.min.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery.easing.1.3.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery.easypiechart.min.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery.elastislide.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery.flexslider-min.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery.fractionslider.min.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery.isotope.min.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery.localscroll-min.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery.nicescroll.min.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery.parallax-1.1.3.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery.prettyPhoto.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery.scrollTo-min.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery.sticky.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery.ui.totop.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/jquery_2.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/layerslider.kreaturamedia.jquery.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/layerslider.transitions.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlessdark/loading.gif">
+      <publishTime>01/18/2016 15:02:36</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlessdark/nothumb.png">
+      <publishTime>01/18/2016 15:02:36</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlessdark/shadow.png">
+      <publishTime>01/18/2016 15:02:36</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlessdark/skin.css">
+      <publishTime>01/18/2016 15:02:36</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlessdark/skin.png">
+      <publishTime>01/18/2016 15:02:36</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlessdark/Thumbs.db">
+      <publishTime>01/18/2016 15:02:36</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlessdark3d/loading.gif">
+      <publishTime>01/18/2016 15:02:36</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlessdark3d/nothumb.png">
+      <publishTime>01/18/2016 15:02:36</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlessdark3d/shadow.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlessdark3d/skin.css">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlessdark3d/skin.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlesslight/loading.gif">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlesslight/nothumb.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlesslight/shadow.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlesslight/skin.css">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlesslight/skin.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlesslight3d/loading.gif">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlesslight3d/nothumb.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlesslight3d/shadow.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlesslight3d/skin.css">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/borderlesslight3d/skin.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/carousel/loading.gif">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/carousel/nothumb.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/carousel/skin.css">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/carousel/skin.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/darkskin/loading.gif">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/darkskin/nothumb.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/darkskin/skin.css">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/darkskin/skin.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/defaultskin/loading.gif">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/defaultskin/nothumb.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/defaultskin/skin.css">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/defaultskin/skin.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/fullwidth/loading.gif">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/fullwidth/nothumb.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/fullwidth/skin.css">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/fullwidth/skin.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/fullwidthdark/loading.gif">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/fullwidthdark/nothumb.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/fullwidthdark/skin.css">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/fullwidthdark/skin.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/glass/loading.gif">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/glass/nothumb.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/glass/shadow.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/glass/skin.css">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/glass/skin.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/lightskin/loading.gif">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/lightskin/nothumb.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/lightskin/skin.css">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/lightskin/skin.png">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/minimal/loading.gif">
+      <publishTime>01/18/2016 15:02:37</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/minimal/nothumb.png">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/minimal/skin.css">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/minimal/skin.png">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/noskin/loading.gif">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/noskin/nothumb.png">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/noskin/skin.css">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/noskin/skin.png">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/v5/loading.gif">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/v5/nothumb.png">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/v5/skin.css">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/layerslider/skins/v5/skin.png">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/MailSend.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/main.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/modernizr-2.6.2.min.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/owl.carousel.min.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/placeholdem.min.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/plugins.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/respond.min.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/superfish.js">
+      <publishTime>01/18/2016 15:02:39</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap.min.js">
+      <publishTime>01/18/2016 15:22:02</publishTime>
+    </File>
+    <File Include="js/vendor/hoverIntent.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jflickrfeed.min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery-1.10.2.min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.actual.min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.bxslider.min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.cookie.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.easing.1.3.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.easypiechart.min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.elastislide.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.fitvids.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.flexslider-min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.fractionslider.min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.funnyText.min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.isotope.min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.localscroll-min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.nicescroll.min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.parallax-1.1.3.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.prettyPhoto.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.scrollTo-min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.sticky.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.timelinr-0.9.54.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.ui.totop.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/modernizr-2.6.2.min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/owl.carousel.min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/placeholdem.min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/placeholders.min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/respond.min.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="js/vendor/superfish.js">
+      <publishTime>01/18/2016 15:02:38</publishTime>
+    </File>
+    <File Include="login.html">
+      <publishTime>01/18/2016 15:25:44</publishTime>
+    </File>
+    <File Include="Models/SmarteezModel.edmx.diagram">
+      <publishTime>01/18/2016 15:15:52</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>01/18/2016 16:56:45</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>01/18/2016 14:41:47</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>01/18/2016 14:41:47</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>01/18/2016 14:41:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>01/18/2016 14:41:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>01/18/2016 14:41:41</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>01/18/2016 14:41:46</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>01/18/2016 14:41:46</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>01/18/2016 14:41:46</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/DetailsView.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Focus.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/GridView.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Menu.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MenuStandards.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjax.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxApplicationServices.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxComponentModel.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxCore.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxGlobalization.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxHistory.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxNetwork.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxSerialization.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxTimer.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebForms.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebServices.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/SmartNav.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/TreeView.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebForms.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebParts.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebUIValidation.js">
+      <publishTime>01/18/2016 14:41:51</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>01/18/2016 15:04:03</publishTime>
+    </File>
+    <File Include="sliderengine/amazingslider.js">
+      <publishTime>01/18/2016 15:03:20</publishTime>
+    </File>
+    <File Include="sliderengine/arrows-32-32-3.png">
+      <publishTime>01/18/2016 15:03:20</publishTime>
+    </File>
+    <File Include="sliderengine/bottomshadow-110-95-1.png">
+      <publishTime>01/18/2016 15:03:20</publishTime>
+    </File>
+    <File Include="sliderengine/bullet-16-16-1.png">
+      <publishTime>01/18/2016 15:03:20</publishTime>
+    </File>
+    <File Include="sliderengine/carouselarrows-32-32-0.png">
+      <publishTime>01/18/2016 15:03:20</publishTime>
+    </File>
+    <File Include="sliderengine/initslider-3.js">
+      <publishTime>01/18/2016 15:03:20</publishTime>
+    </File>
+    <File Include="sliderengine/jquery.js">
+      <publishTime>01/18/2016 15:03:20</publishTime>
+    </File>
+    <File Include="sliderengine/navarrows-28-28-0.png">
+      <publishTime>01/18/2016 15:03:20</publishTime>
+    </File>
+    <File Include="sliderengine/navbuttonbgimage-28-28-0.png">
+      <publishTime>01/18/2016 15:03:20</publishTime>
+    </File>
+    <File Include="sliderengine/navplaypause-28-28-0.png">
+      <publishTime>01/18/2016 15:03:20</publishTime>
+    </File>
+    <File Include="sliderengine/playvideo-64-64-0.png">
+      <publishTime>01/18/2016 15:03:20</publishTime>
+    </File>
+    <File Include="sliderengine/previewarrow-16-8-0.png">
+      <publishTime>01/18/2016 15:03:20</publishTime>
+    </File>
+    <File Include="testiengine/amazingcarousel.js">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/html5boxplayer.swf">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/initcarousel-1.css">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/initcarousel-1.js">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/jquery.js">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/skin/arrows-36-80-0-.png">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/skin/arrows-36-80-0.png">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/skin/hoveroverlay-64-64-5.png">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/skin/html5boxplayer_fullscreen.png">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/skin/html5boxplayer_hd.png">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/skin/html5boxplayer_playpause.png">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/skin/html5boxplayer_playvideo.png">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/skin/html5boxplayer_volume.png">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/skin/lightbox-close.png">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/skin/lightbox-loading.gif">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/skin/lightbox-next.png">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/skin/lightbox-playvideo.png">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/skin/lightbox-prev.png">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/skin/playvideo-64-64-0.png">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="testiengine/skin/Thumbs.db">
+      <publishTime>01/18/2016 15:04:02</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/18/2016 19:54:56</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
